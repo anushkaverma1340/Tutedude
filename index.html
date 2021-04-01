@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tutedude</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="body">
+    <div class="container1">
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <div class="Category-type">
+
+          <p><span class="logo">Tutedude </span>| Digital Marketing</p>
+
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown" style="width: inherit">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown" id="hide-it" style="display: none;">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" onclick="signOut();">Log out</a>
+                <a class="dropdown-item" href="../profile.php">Profile</a>
+              </div>
+            </li>
+            <li class="nav-item" id="hide-login">
+              <button type="button" class="btn btn-outline-light top-buttons login" id="Login" onclick="openLForm()">Login</button>
+            </li>
+            <li class="nav-item" id="hide-signup">
+              <button type="button" class="btn btn-outline-light top-buttons signup" id="Signup" onclick="openRForm()">Signup</button>
+            </li>
+
+          </ul>
+        </div>
+
+      </nav>
+
+    </div>
+    <div class="none container2">
+      <section class="Image">
+        <div class="course-name">
+          <h1><span class="purple">Digital Marketing</span></h1>
+          <h5>Learn from Serial Entrepreneur who grew 2 ventures to 15 Mn+ Monthly Traffic - Step by Step Process<br />for Digital Success</h5>
+          <br>
+          <div class="Offer-1">
+            <h5><span class="purple">Course By:</span></h5>
+            <p>Jitasmita Banerjee</p>
+          </div>
+          <br>
+          <form action="digitalmarketing.php" method="post">
+            <button  type="button" class="btn btn-outline-light enroll-now" name="submit" id="hide-kar" onclick="vfx()">Enroll Now<br>for ₹699.00</button>
+          </form>
+          <a href="https://tutedude.com/course/lecture-digitalmarketing.php"><button class="enroll-now" id="show-kar" style="display: none;">Go to<br>the course</button></a>
+          <br>
+          <p><i class="fas fa-language"></i> English(Indian)</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>
